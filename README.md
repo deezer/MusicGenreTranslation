@@ -36,7 +36,7 @@ stratified sampling when generating folds.
 
 After this, if everything went well, the figures will be in `data/plots`.
 
-Because running all the results is quite long, the plots are generated only
+/!\ Because running all the results is quite long, the plots are generated only
 for the lowest amounts of data, but you can change that setting in
 `tag_translation/conf.py`.
 
