@@ -36,3 +36,4 @@ termcolor==1.1.0
 Unidecode==1.0.23
 Werkzeug==0.15.2
 wordninja==0.1.5
+gdown==3.8.3

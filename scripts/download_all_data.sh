@@ -6,7 +6,7 @@ download_file(){
     dest=$2
 
     if [ ! -e ${dest%.bz2} ]; then
-        wget https://drive.google.com/uc\?export\=download\&id\="$drive_id" -O $dest
+        gdown https://drive.google.com/uc\?export\=download\&id\="$drive_id" -O $dest
     else
         echo "$dest already exists. Skipping."
     fi

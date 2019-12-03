@@ -206,7 +206,7 @@ $(ALL_PLOTS): $(SCRIPT_PLOT_RESULTS) $(PLOTS_DIR) results
 
 all_kb_results: $(ALL_ARTIST_SPLITS) $(KB_RESULTS_DISCOGS) $(KB_RESULTS_LASTFM) $(KB_RESULTS_TAGTRAUM)
 
-all_bs_results: $(BS_RESULTS_DISCOGS) $(BS_RESULTS_LASTFM) $(BS_RESULTS_TAGTRAUM)
+all_bs_results: $(ALL_ARTIST_SPLITS) $(BS_RESULTS_DISCOGS) $(BS_RESULTS_LASTFM) $(BS_RESULTS_TAGTRAUM)
 
 all_ml_results: $(ALL_ARTIST_SPLITS) $(ML_RESULTS_DISCOGS) $(ML_RESULTS_LASTFM) $(ML_RESULTS_TAGTRAUM)
 
@@ -214,7 +214,7 @@ all_map_results: $(ALL_ARTIST_SPLITS) $(MAP_RESULTS_DISCOGS) $(MAP_RESULTS_LASTF
 
 all_map_no_bias_results: $(ALL_ARTIST_SPLITS) $(MAP_RESULTS_NO_BIAS_DISCOGS) $(MAP_RESULTS_NO_BIAS_LASTFM) $(MAP_RESULTS_NO_BIAS_TAGTRAUM)
 
-results: translation_table all_bs_results all_kb_results all_ml_results all_map_results all_map_no_bias_results
+results: $(RESULTS_DIR) translation_table all_bs_results all_kb_results all_ml_results all_map_results all_map_no_bias_results
 
 plots: $(ALL_PLOTS)
 
